@@ -1,10 +1,9 @@
+# Risk Inventory
 This inventory is intended to identify the initial governance risks associated with the use case, with a focus on fairness, reliability and safety, transparency, and privacy.
 The objective of this section is risk identification rather than mitigation.
 
-
-# Risk Inventory
-
 ## Risk Identification Approach
+The risks listed below were identified by considering how the system could produce unfair, unreliable, insufficiently explainable, or privacy-intrusive outcomes within the defined HR screening use case.
 
 ## Risk 1: Unfair candidate scoring due to proxy attributes
 **Related principle:** Fairness
