@@ -29,4 +29,5 @@ The system may generate rankings or relevance scores without clear, interpretabl
 
 ## Risk 5: Excessive processing or retention of personal data
 **Related principle:** Privacy & Data Protection
+
 The system may process, store, or transmit personal information contained in resumes beyond what is necessary for the defined screening purpose. This may include direct identifiers, non-essential personal details, or inferred attributes that are not required for early-stage candidate evaluation.
