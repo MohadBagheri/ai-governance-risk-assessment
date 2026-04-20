@@ -1,6 +1,10 @@
 # Control Measures
 
+This section defines the initial control measures proposed to reduce the governance risks identified in the use case. The focus is on practical controls that support fairness, reliability and safety, transparency, and privacy in AI-assisted resume screening.
+
 ## Control Design Approach
+
+The controls below are intended to reduce the likelihood or impact of unfair, unreliable, insufficiently explainable, or privacy-intrusive outcomes. They do not eliminate risk entirely, and ongoing human oversight and periodic review remain necessary.
 
 ## Risk 1: Unfair candidate scoring due to proxy attributes
 
@@ -14,11 +18,14 @@
 
 ### Implementation notes
 
-Human review should occur before any rejection or negative screening outcome is finalized.
+- Human review should occur before any rejection or negative screening outcome is finalized.
+- HR reviewers should be instructed to assess whether the score appears justified by job-relevant qualifications.
+- Review decisions should be documented for traceability.
 
 ### Residual concern
 
-Some proxy effects may remain indirect and difficult to detect, and human reviewers may still rely too heavily on AI-generated decisions.
+- Some proxy effects may remain indirect and difficult to detect.
+- Human reviewers may still rely too heavily on AI-generated decisions.
 
 ## Risk 2: Improper exclusion due to incomplete resume information
 
@@ -60,3 +67,49 @@ Some proxy effects may remain indirect and difficult to detect, and human review
 
 - Some keyword-driven inflation may remain difficult to detect, especially when resumes appear superficially aligned with the job description.
 - Human reviewers may not consistently identify weak evidence behind high scores.
+
+## Risk 4: Limited explainability of candidate scoring
+
+**Control objective:** Reduce the risk of candidate scoring without clear, understandable, and sufficiently documented reasons.
+
+### Proposed controls
+
+- Each score should include the main contributing factors that influenced the output.
+- When the system’s explanation is insufficient, the case should be flagged for mandatory human review.
+- Outputs that cannot be meaningfully explained should not be used as the sole basis for screening decisions.
+
+### Implementation notes
+
+- The system’s explanation should be displayed alongside each score.
+- When the system’s explanation is weak or insufficient, HR should manually review the case.
+- Review outcomes should be documented for traceability.
+
+### Residual concern
+
+- Some explanations may appear convincing without being sufficiently informative.
+- HR reviewers may still accept weak explanations without sufficient challenge.
+- Complete explainability may not always be achievable.
+
+## Risk 5: Excessive processing or retention of personal data
+
+**Control objective:** Reduce the processing, storage, or transfer of unnecessary personal information.
+
+### Proposed controls
+- Only information necessary for early-stage screening should be processed by the system.
+- Access to candidate resume data should be limited to authorized personnel only.
+- Unnecessary personal identifiers should be masked, excluded, or not retained where feasible.
+- Personal data should not be shared with third-party tools unless there is a documented and justified need.
+- A defined retention period should be established for candidate data used by the system.
+
+### Implementation notes
+
+- HR and system owners should define what information is necessary for screening before deployment.
+- Access permissions should be role-based and limited to those directly involved in the process.
+- Data retention and deletion rules should be documented and applied consistently.
+- Any use of third-party services should be reviewed before deployment to assess privacy implications.
+
+### Residual concern
+
+- Some personal information may still appear in free-text resumes even when it is not needed for screening.
+- Complete removal of sensitive or non-essential signals may be difficult in practice.
+- Third-party processing may still introduce additional privacy and data protection risk.
