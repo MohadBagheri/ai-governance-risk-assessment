@@ -40,3 +40,23 @@ Some proxy effects may remain indirect and difficult to detect, and human review
 
 - Some qualified candidates may still be undervalued if important information is implicit, poorly formatted, or difficult for the system to interpret.
 - Human reviewers may not review all borderline cases with the same level of care or consistency.
+
+## Risk 3: Score inflation due to keyword stuffing
+
+**Control objective:** Prevent unjustified high ranking based on excessive repetition of job-related keywords when the candidate’s actual experience or competency is not well supported.
+
+### Proposed controls
+
+- The system should not rely solely on keyword frequency when generating candidate scores.
+- High-scoring resumes should be flagged for human review when the score appears to be driven primarily by repeated job-related terms.
+- Scoring should take into account contextual evidence of experience, not only lexical overlap with the job description.
+
+### Implementation notes
+
+- HR reviewers should verify whether highly ranked candidates provide concrete evidence of relevant skills and experience beyond repeated keywords.
+- Cases with unusually high scores should be subject to manual review before shortlist decisions are finalized.
+
+### Residual concern
+
+- Some keyword-driven inflation may remain difficult to detect, especially when resumes appear superficially aligned with the job description.
+- Human reviewers may not consistently identify weak evidence behind high scores.
