@@ -1,4 +1,4 @@
-# Final Recommendation – HR AI Screening System
+# Final Recommendation – HR Resume-Screening AI Assistant
 
 ## Overall Assessment
 
