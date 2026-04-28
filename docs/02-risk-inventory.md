@@ -11,7 +11,6 @@ The risks listed below were identified by considering how the system could produ
 **Related principle:** Fairness
 
 The system may produce unfairly lower relevance scores for candidates due to proxies associated with names, nationality, linguistic background, or other non-job-related attributes.
-**Regulatory context:** Proxy-based discrimination in hiring engages the Canadian Human Rights Act (prohibited grounds  include race, national/ethnic origin, and language). At the federal level, this system would also be subject to the Employment Equity Act.
 
 ## Risk 2: Improper exclusion due to incomplete resume information
 **Related principle:** Reliability & Safety
