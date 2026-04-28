@@ -31,3 +31,26 @@ The system may generate rankings or relevance scores without clear, interpretabl
 **Related principle:** Privacy & Data Protection
 
 The system may process, store, or transmit personal information contained in resumes beyond what is necessary for the defined screening purpose. This may include direct identifiers, non-essential personal details, or inferred attributes that are not required for early-stage candidate evaluation.
+
+## Risk Summary Table
+
+| Risk ID | Risk Title | Likelihood | Impact | Risk Level | Regulatory Reference |
+|---|---|---|---|---|---|
+| R1 | Unfair scoring due to proxy attributes | High | High | Critical | Canadian Human Rights Act; Quebec Law 25 |
+| R2 | Improper exclusion due to incomplete resume | Medium | Medium | Moderate | PIPEDA Principle 4.4 |
+| R3 | Score inflation due to keyword stuffing | Medium | Low | Low | — |
+| R4 | Limited explainability of scoring | High | High | Critical | Quebec Law 25, Art. 12; Directive on Automated Decision-Making |
+| R5 | Excessive processing or retention of personal data | Medium | High | High | PIPEDA; Quebec Law 25; Canada Bill C-27 |
+
+## Risk Scoring Methodology
+
+Each risk is assessed using a two-dimensional model based on 
+**likelihood** (probability of occurrence) and **impact**(severity of harm if it occurs). Risk level is derived from 
+the combination of these two dimensions:
+
+| | Low Impact | Medium Impact | High Impact |
+|---|---|---|---|
+| **High Likelihood** | Moderate | High | Critical |
+| **Medium Likelihood** | Low | Moderate | High |
+| **Low Likelihood** | Low | Low | Moderate |
+
